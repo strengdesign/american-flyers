@@ -1,6 +1,7 @@
 /*
 	font-family: 'Futura W03', sans-serif; - 600,900
 	font-family: 'Adobe Caslon W01', serif; - 400,700
+	type scale (1.414): 16, 23, 32, 45, 64
 */
 
 * {
@@ -156,11 +157,13 @@ button {
 	color: #0053a0;
 	cursor: pointer;
 	display: inline-block;
-	font-weight: 200;
+	font-family: 'Futura W03', sans-serif;
+	font-weight: 600;
 	letter-spacing: 0.05em;
 	margin: 0;
-	padding: 0.5em 1em;
+	padding: 0.75em 1.5em;
 	text-decoration: none;
+	text-transform: uppercase;
 }
 
 a.btn:hover,
@@ -218,19 +221,19 @@ h2 {
 }
 
 h1 {
-	font-size: 3.333333333333333em;
+	font-size: 4em;
 }
 
 h2 {
-	font-size: 2.222222222222222em;
+	font-size: 2.5em;
 }
 
 h3 {
-	font-size: 1.333333333333333em;
+	font-size: 1.75em;
 }
 
 h4 {
-	font-size: 1em;
+	font-size: 1.25em;
 }
 
 p + h2,
@@ -253,6 +256,78 @@ img, object, embed {
 .content {
 	padding-left: 4em;
 	padding-right: 4em;
+}
+
+.copyright {
+	color: #aaafb3;
+	font-family: 'Futura W03', sans-serif;
+	font-weight: 600;
+	font-size: 0.8125em;
+	letter-spacing: 0.1em;
+	margin: 3em 0 0 0;
+	text-transform: uppercase;
+}
+
+.footer-locations ul {
+	font-family: 'Futura W03', sans-serif;
+	font-weight: 600;
+	letter-spacing: 0.05em;
+	list-style: none;
+	margin: 2em 0 0 0;
+	padding: 0;
+	text-transform: uppercase;
+}
+
+.footer-locations li {
+	display: inline-block;
+	margin: 0 1em;
+	vertical-align: top;
+}
+
+.footer-locations a {
+	color: #aaafb3;
+	-moz-transition: color 150ms ease-out;
+	-o-transition: color 150ms ease-out;
+	-webkit-transition: color 150ms ease-out;
+	transition: color 150ms ease-out;
+}
+
+.footer-locations a:hover {
+	color: #0053a0;
+}
+
+.footer-logo {
+	margin-top: 3em;
+	max-width: 15em;
+	vertical-align: middle;
+}
+
+.footer-nav ul {
+	font-family: 'Futura W03', sans-serif;
+	font-weight: 600;
+	letter-spacing: 0.05em;
+	list-style: none;
+	margin: 3em 0 0 0;
+	padding: 0;
+	text-transform: uppercase;
+}
+
+.footer-nav li {
+	display: inline-block;
+	margin: 0 1em;
+	vertical-align: top;
+}
+
+.footer-nav a {
+	color: #5f6c75;
+	-moz-transition: color 150ms ease-out;
+	-o-transition: color 150ms ease-out;
+	-webkit-transition: color 150ms ease-out;
+	transition: color 150ms ease-out;
+}
+
+.footer-nav a:hover {
+	color: #0053a0;
 }
 
 .hero {
@@ -283,6 +358,144 @@ img, object, embed {
 	text-transform: uppercase;
 }
 
+.homepage-callouts a {
+	color: #5f6c75;
+	display: block;
+	font-size: 1.125em;
+	float: left;
+	padding: 4em 4em 4em 12em;
+	position: relative;
+	-moz-transition: all 150ms ease-out;
+	-o-transition: all 150ms ease-out;
+	-webkit-transition: all 150ms ease-out;
+	transition: all 150ms ease-out;
+	width: 33.33333333333333%;
+}
+
+.homepage-callouts a:hover {
+	background: #ed9d32;
+	color: #fff;
+}
+
+.homepage-callouts svg {
+	display: block;
+	fill: #5f6c75;
+	height: 5em;
+	left: 4em;
+	position: absolute;
+	top: 4em;
+	-moz-transition: fill 150ms ease-out;
+	-o-transition: fill 150ms ease-out;
+	-webkit-transition: fill 150ms ease-out;
+	transition: fill 150ms ease-out;
+	width: 5em;
+}
+
+.homepage-callouts a:hover svg {
+	fill: #fff;
+}
+
+.homepage-callouts h3 {
+	font-size: 1.25em;
+	font-weight: 900;
+	letter-spacing: 0.05em;
+	margin: 0;
+	text-transform: uppercase;
+	-moz-transition: color 150ms ease-out;
+	-o-transition: color 150ms ease-out;
+	-webkit-transition: color 150ms ease-out;
+	transition: color 150ms ease-out;
+}
+
+.homepage-callouts a:hover h3 {
+	color: #fff;
+}
+
+.homepage-callouts p {
+	margin: 0.5em 0 0 0;
+}
+
+.homepage-video img {
+	display: block;
+}
+
+.phone-contact {
+	background: #eff0f2;
+	font-family: 'Futura W03', sans-serif;
+	font-weight: 900;
+	letter-spacing: 0.05em;
+	padding: 4em 0;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.phone-contact .phone {
+	display: inline-block;
+	margin: 1em 0;
+	max-width: 18%;
+	padding: 0 3em;
+	position: relative;
+	text-align: left;
+	vertical-align: top;
+}
+
+.phone-contact svg {
+	display: block;
+	fill: #5f6c75;
+	height: 1.75em;
+	left: 0;
+	position: absolute;
+	top: 0.5em;
+	width: 1.75em;
+}
+
+.phone-contact h4 {
+	font-size: 1.125em;
+	font-weight: 900;
+	line-height: 1.3;
+	margin: 0;
+}
+
+.phone-contact .number {
+	font-size: 0.875em;
+}
+
+a.site-credit {
+	color: #aaafb3;
+	display: inline-block;
+	font-family: 'Futura W03', sans-serif;
+	font-size: 0.8125em;
+	font-weight: 600;
+	letter-spacing: 0.1em;
+	margin-top: 1em;
+	position: relative;
+	text-transform: uppercase;
+	-moz-transition: color 150ms ease-out;
+	-o-transition: color 150ms ease-out;
+	-webkit-transition: color 150ms ease-out;
+	transition: color 150ms ease-out;
+}
+
+a.site-credit:hover {
+	color: #de0d12;
+}
+
+a.site-credit svg {
+	fill: #de0d12;
+	height: 14px;
+	left: 100%;
+	margin-left: 0.5em;
+	position: absolute;
+	top: 0;
+	width: 33px;
+}
+
+.site-footer {
+	background: #e9ebed;
+	padding: 5em 0;
+	text-align: center;
+}
+
 .site-header {
 	padding: 1em 0;
 	position: relative;
@@ -306,6 +519,7 @@ img, object, embed {
 
 .site-logo img {
 	display: block;
+	margin: 0 auto;
 }
 
 .site-nav {
@@ -314,6 +528,7 @@ img, object, embed {
 	font-weight: 600;
 	position: absolute;
 	right: 16em;
+	text-align: right;
 	top: 2.125em;
 }
 
@@ -336,6 +551,7 @@ img, object, embed {
 .site-nav .main-nav > li {
 	display: inline-block;
 	position: relative;
+	text-align: left;
 }
 
 .site-nav .main-nav > li > a {
@@ -430,6 +646,144 @@ img, object, embed {
 	fill: #fff;
 }
 
+.social-media a {
+	display: inline-block;
+	margin: 0 1em;
+	padding: 1em;
+	-moz-transition: background 150ms ease-out;
+	-o-transition: background 150ms ease-out;
+	-webkit-transition: background 150ms ease-out;
+	transition: background 150ms ease-out;
+	vertical-align: middle;
+}
+
+.social-media a:hover {
+	background: #0053a0;
+}
+
+.social-media svg {
+	display: block;
+	fill: #5f6c75;
+	height: 3.5em;
+	-moz-transition: fill 150ms ease-out;
+	-o-transition: fill 150ms ease-out;
+	-webkit-transition: fill 150ms ease-out;
+	transition: fill 150ms ease-out;
+	width: 3.5em;
+}
+
+.social-media a:hover svg {
+	fill: #fff;
+}
+
+.training a {
+	display: block;
+	float: left;
+	min-height: 25em;
+	padding: 5% 8em 0 8em;
+	position: relative;
+	text-align: center;
+	-moz-transition: background 150ms ease-out;
+	-o-transition: background 150ms ease-out;
+	-webkit-transition: background 150ms ease-out;
+	transition: background 150ms ease-out;
+	width: 50%;
+}
+
+.training a:hover {
+	background: #ffac2a;
+}
+
+.training a:after {
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	content: '\0020';
+	height: 100%;
+	left: 0;
+	opacity: .1;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+.training .overlay {
+	position: relative;
+	z-index: 2;
+}
+
+.training .online-training:after {
+	background-image: url('/images/online-training.jpg');
+}
+
+.training .individual-training:after {
+	background-image: url('/images/individual-training.jpg');
+}
+
+.training .career-training:after {
+	background-image: url('/images/career-training.jpg');
+}
+
+.training .weekend-ground-schools:after {
+	background-image: url('/images/weekend-ground-schools.jpg');
+}
+
+.training svg {
+	display: none;
+	fill: #0053a0;
+	height: 45px;
+	margin: 0 auto;
+	width: 60px;
+}
+
+.training h2 {
+	margin: 0;
+	text-transform: uppercase;
+	-moz-transition: color 150ms ease-out;
+	-o-transition: color 150ms ease-out;
+	-webkit-transition: color 150ms ease-out;
+	transition: color 150ms ease-out;
+}
+
+.training a:hover h2 {
+	color: #fff;
+}
+
+.training p {
+	color: #5f6c75;
+	font-size: 1.25em;
+	-moz-transition: color 150ms ease-out;
+	-o-transition: color 150ms ease-out;
+	-webkit-transition: color 150ms ease-out;
+	transition: color 150ms ease-out;
+}
+
+.training a:hover p {
+	color: #fff;
+}
+
+.training .btn {
+	border: 3px solid #0053a0;
+	display: inline-block;
+	font-family: 'Futura W03', sans-serif;
+	font-weight: 600;
+	letter-spacing: 0.05em;
+	padding: 0.75em 1.5em;
+	text-transform: uppercase;
+	-moz-transition: all 150ms ease-out;
+	-o-transition: all 150ms ease-out;
+	-webkit-transition: all 150ms ease-out;
+	transition: all 150ms ease-out;
+	vertical-align: middle;
+}
+
+.training a:hover .btn {
+	background: #0053a0;
+	color: #fff;
+}
+
+
 /* ==========================================================================
    SVG Fallback
    ========================================================================== */
@@ -443,7 +797,96 @@ img, object, embed {
    Media Queries
    ========================================================================== */
 
-@media only screen and (max-width: 1350px) {
+@media only screen and (max-width: 1550px) {
+	h1 {
+		font-size: 3.5em;
+	}
+
+	h2 {
+		font-size: 2.125em;
+	}
+
+	h3 {
+		font-size: 1.5em;
+	}
+
+	h4 {
+		font-size: 1.125em;
+	}
+
+	.homepage-callouts a {
+		font-size: 1em;
+		padding: 4em 3em 4em 8em;
+	}
+
+	.homepage-callouts svg {
+		height: 3em;
+		left: 3em;
+		top: 4em;
+		width: 3em;
+	}
+
+	.phone-contact .phone {
+		max-width: none;
+	}
+
+	.phone-contact h4 {
+		font-size: 1em;
+	}
+
+	.site-header .phone {
+		font-size: 1em;
+		top: 2.75em;
+	}
+
+	.site-nav {
+		font-size: 1em;
+		top: 2.75em;
+	}
+
+	.site-search {
+		font-size: 1em;
+		top: 2.75em;
+	}
+
+	.training a {
+		padding-top: 6%;
+	}
+
+	.training p {
+		font-size: 1em;
+	}
+}
+
+@media only screen and (max-width: 1400px) {
+	.site-header {
+		text-align: center;
+	}
+
+	.site-header .phone {
+		display: inline-block;
+		margin: 0 1.5em;
+		position: static;
+		vertical-align: middle;
+	}
+
+	.site-logo {
+		display: block;
+		margin-bottom: 1em;
+	}
+
+	.site-nav {
+		display: inline-block;
+		position: static;
+		text-align: center;
+		vertical-align: middle;
+	}
+
+	.site-search {
+		display: inline-block;
+		position: static;
+		vertical-align: middle;
+	}
 }
 
 @media only screen and (min-width: 1351px) {
