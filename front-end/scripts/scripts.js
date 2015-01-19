@@ -1,16 +1,16 @@
 $(function () {
 
 	/* ==========================================================================
-	   Variables
+	   variables
 	   ========================================================================== */
 	var navContainer = $('.site-nav');
 	var mainNav = $('.main-nav');
 
 	/* ==========================================================================
-	   Mobile navigation
+	   mobile navigation
 	   ========================================================================== */
-	navContainer.prepend('<span class="nav-icon clearfix">Menu <span class="icon"></span></span>');
-	mainNav.find('.menu').before('<span class="subnav-icon">&nbsp;</span>');
+	navContainer.prepend('<span class="nav-icon" title="Menu">&nbsp;<span class="icon"></span></span>');
+	mainNav.find('.menu').before('<span class="subnav-icon" title="Toggle">&nbsp;</span>');
 
 	$('.nav-icon').click(function () {
 		mainNav.toggleClass('active');
@@ -23,5 +23,12 @@ $(function () {
 	});
 
 
+	/* ==========================================================================
+	   homepage video
+	   ========================================================================== */
+	$('.homepage-video .title-screen').click(function () {
+		$(this).hide();
+		$('.homepage-video .video-container').show();
+	});
 
 });
