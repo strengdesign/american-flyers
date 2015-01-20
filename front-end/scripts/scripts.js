@@ -27,8 +27,8 @@ $(function () {
 	   homepage video
 	   ========================================================================== */
 	$('.homepage-video .title-screen').click(function () {
-		$(this).hide();
-		$('.homepage-video .video-container').show();
+		$(this).fadeOut();
+		//$('.homepage-video .video-container').show();
 	});
 
 });

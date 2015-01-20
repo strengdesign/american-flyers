@@ -433,13 +433,22 @@ img, object, embed {
 	margin: 0.5em 0 0 0;
 }
 
-.homepage-video img {
-	display: block;
+.homepage-video {
+	overflow: hidden;
+	position: relative;
 }
 
 .homepage-video .title-screen {
 	cursor: pointer;
-	position: relative;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+.homepage-video .title-screen img {
+	display: block;
 }
 
 .homepage-video .overlay {
@@ -483,9 +492,9 @@ img, object, embed {
 	color: #ed9d32;
 }
 
-.homepage-video .video-container {
+/*.homepage-video .video-container {
 	display: none;
-}
+}*/
 
 .homepage-video object,
 .homepage-video embed {
@@ -650,7 +659,6 @@ a.site-credit svg {
 	left: 0;
 	opacity: 0;
 	overflow: hidden;
-	padding: 1em 0;
 	position: absolute;
 	-moz-transform: scaleY(0);
 	-ms-transform: scaleY(0);
