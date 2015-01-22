@@ -1,7 +1,6 @@
 /*
 	font-family: 'Futura W03', sans-serif; - 600,900
 	font-family: 'Adobe Caslon W01', serif; - 400,700
-	type scale (1.414): 16, 23, 32, 45, 64
 */
 
 * {
@@ -270,6 +269,47 @@ img, object, embed {
 /* ==========================================================================
    Custom Styles
    ========================================================================== */
+.aftv a {
+	color: #5f6c75;
+	display: block;
+	padding: 4em;
+	text-align: center;
+}
+
+.aftv a:hover {
+	background: #ed9d32;
+	color: #fff;
+}
+
+.aftv h2 {
+	font-size: 1.4375em;
+	font-weight: 900;
+	letter-spacing: 0.05em;
+	margin: 0 0 0.25em 0;
+}
+
+.aftv a:hover h2 {
+	color: #fff;
+}
+
+.aftv h3 {
+	color: #5f6c75;
+	font-size: 4em;
+	letter-spacing: 0.05em;
+	line-height: 1;
+	margin: 0 0 0.25em 0;
+	text-transform: uppercase;
+}
+
+.aftv a:hover h3 {
+	color: #fff;
+}
+
+.aftv p {
+	font-size: 1.25em;
+	margin: 0;
+}
+
 .content {
 	padding-left: 4em;
 	padding-right: 4em;
@@ -474,7 +514,7 @@ img, object, embed {
 	color: #fff;
 	font-size: 4em;
 	letter-spacing: 0.05em;
-	line-height: 1.2;
+	line-height: 1;
 	margin: 0.25em 0;
 	text-transform: uppercase;
 }
@@ -904,6 +944,14 @@ a.site-credit svg {
 		font-size: 1.125em;
 	}
 
+	.aftv h3 {
+		font-size: 3.5em;
+	}
+
+	.aftv p {
+		font-size: 1.125em;
+	}
+
 	.homepage-callouts a {
 		padding: 3em 3em 4em 3em;
 		text-align: center;
@@ -988,6 +1036,20 @@ a.site-credit svg {
 }
 
 @media only screen and (max-width: 1150px) {
+	.aftv h2 {
+		font-size: 1.25em;
+		margin-bottom: 0.5em;
+	}
+
+	.aftv h3 {
+		font-size: 2.125em;
+		margin-bottom: 0.5em;
+	}
+
+	.aftv p {
+		font-size: 1em;
+	}
+
 	.hero img {
 		margin-left: -25%;
 		max-width: none;
@@ -1037,6 +1099,10 @@ a.site-credit svg {
 }
 
 @media only screen and (max-width: 950px) {
+	.aftv a {
+		padding: 3em 2em;
+	}
+
 	.content {
 		padding-left: 2em;
 		padding-right: 2em;
@@ -1350,6 +1416,10 @@ a.site-credit svg {
 		font-size: 1em;
 	}
 
+	.aftv h3 {
+		font-size: 1.75em;
+	}
+
 	.copyright {
 		margin-top: 2em;
 	}
@@ -1462,6 +1532,10 @@ a.site-credit svg {
 		font-size: 1.125em;
 	}
 
+	.aftv h3 {
+		font-size: 1.5em;
+	}
+
 	.homepage-video .overlay {
 		-moz-transform: translateY(-50%);
 		-ms-transform: translateY(-50%);
@@ -1509,68 +1583,71 @@ a.site-credit svg {
    ========================================================================== */
 
 @media print {
-	* {
-		background: transparent !important;
-		color: #000 !important; /* Black prints faster: h5bp.com/s */
-		box-shadow: none !important;
-		text-shadow: none !important;
-	}
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
 
-	a,
-	a:visited {
-		text-decoration: underline;
-	}
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
 
-	/*     a[href]:after {
+    /*a[href]:after {
         content: " (" attr(href) ")";
-		}
+    }*/
 
     abbr[title]:after {
         content: " (" attr(title) ")";
-		} */
+    }
 
-	/*
-     * Don't show links for images, or javascript/internal links
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
      */
 
-	.ir a:after,
-	a[href^="javascript:"]:after,
-	a[href^="#"]:after {
-		content: "";
-	}
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
 
-	pre,
-	blockquote {
-		border: 1px solid #999;
-		page-break-inside: avoid;
-	}
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
 
-	thead {
-		display: table-header-group; /* h5bp.com/t */
-	}
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
 
-	tr,
-	img {
-		page-break-inside: avoid;
-	}
+    thead {
+        display: table-header-group;
+    }
 
-	img {
-		max-width: 100% !important;
-	}
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
 
-	@page {
-		margin: 1cm;
-	}
+    img {
+        max-width: 100% !important;
+    }
 
-	p,
-	h2,
-	h3 {
-		orphans: 3;
-		widows: 3;
-	}
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
 
-	h2,
-	h3 {
-		page-break-after: avoid;
-	}
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
 }
