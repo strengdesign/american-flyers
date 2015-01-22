@@ -270,10 +270,13 @@ img, object, embed {
    Custom Styles
    ========================================================================== */
 .aftv a {
-	color: #5f6c75;
 	display: block;
 	padding: 4em;
 	text-align: center;
+	-moz-transition: background 150ms ease-out;
+	-o-transition: background 150ms ease-out;
+	-webkit-transition: background 150ms ease-out;
+	transition: background 150ms ease-out;
 }
 
 .aftv a:hover {
@@ -286,6 +289,10 @@ img, object, embed {
 	font-weight: 900;
 	letter-spacing: 0.05em;
 	margin: 0 0 0.25em 0;
+	-moz-transition: color 150ms ease-out;
+	-o-transition: color 150ms ease-out;
+	-webkit-transition: color 150ms ease-out;
+	transition: color 150ms ease-out;
 }
 
 .aftv a:hover h2 {
@@ -299,6 +306,10 @@ img, object, embed {
 	line-height: 1;
 	margin: 0 0 0.25em 0;
 	text-transform: uppercase;
+	-moz-transition: color 150ms ease-out;
+	-o-transition: color 150ms ease-out;
+	-webkit-transition: color 150ms ease-out;
+	transition: color 150ms ease-out;
 }
 
 .aftv a:hover h3 {
@@ -306,8 +317,17 @@ img, object, embed {
 }
 
 .aftv p {
+	color: #5f6c75;
 	font-size: 1.25em;
 	margin: 0;
+	-moz-transition: color 150ms ease-out;
+	-o-transition: color 150ms ease-out;
+	-webkit-transition: color 150ms ease-out;
+	transition: color 150ms ease-out;
+}
+
+.aftv a:hover p {
+	color: #fff;
 }
 
 .content {
