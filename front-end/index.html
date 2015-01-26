@@ -226,7 +226,7 @@
 		</div> <!-- /title-screen -->
 
 		<div class="video-container">
-			<iframe id="video" width="560" height="315" src="//www.youtube.com/embed/DC6vJHpVnzA?rel=0&enablejsapi=1&playerapiid=yt" frameborder="0" showinfo="0" allowfullscreen></iframe>
+			<iframe width="560" height="315" src="//www.youtube.com/embed/DC6vJHpVnzA?rel=0" frameborder="0" showinfo="0" allowfullscreen></iframe>
 		</div> <!-- /video-container -->
 
 	</section> <!-- /homepage-video -->
@@ -240,30 +240,26 @@
 	</section> <!-- /aftv -->
 
 	<section class="homepage-callouts clearfix">
-		<a href="#">
+		<a href="/about/employops.asp">
 			<svg data-fallback="/images/svg-fallback/chart.png">
 				<use xlink:href="#svg-chart"></use>
 			</svg>
 			<h3>Employment</h3>
-            <p>American Flyers is continuously seeking talented professionals; quality training and customer service are priorities -
-               Management / Admissions and Flight Instructing opportunities available at all locations.
-            </p>
+			<p>American Flyers is continuously seeking talented professionals; quality training and customer service are priorities - Management / Admissions and Flight Instructing opportunities available at all locations.</p>
 		</a>
-		<a href="#">
+		<a href="/content/support/contact.aspx">
 			<svg data-fallback="/images/svg-fallback/computer-phone.png">
 				<use xlink:href="#svg-computer-phone"></use>
 			</svg>
 			<h3>FIRC Tech Support</h3>
-			<p>American Flyers strives to assist in making sure you keep your Flight Instructor Certificate current. We appreciate your need for timely 
-            assistance when you are working on your revalidation. Contact our FIRC specialists.</p>
+			<p>American Flyers strives to assist in making sure you keep your Flight Instructor Certificate current. We appreciate your need for timely assistance when you are working on your revalidation. Contact our FIRC specialists.</p>
 		</a>
-		<a href="#">
+		<a href="http://www.livehelpnow.net/lhn/lcv.aspx?d=0&ms=&zzwindow=0&lhnid=21179&custom1=&custom2=&custom3=&time=1/26/2015%2010:46:43%20AM" target="_blank">
 			<svg data-fallback="/images/svg-fallback/chat.png">
 				<use xlink:href="#svg-chat"></use>
 			</svg>
 			<h3>Live Chat</h3>
-			<p>Need to plan your training? Do you have questions about learning to fly, passing your written, or 
-            pursuing a Career as a pilot? Take advantage of our "Live" feature - Chat with our Aviation Specialists.</p>
+			<p>Need to plan your training? Do you have questions about learning to fly, passing your written, or pursuing a Career as a pilot? Take advantage of our "Live" feature - Chat with our Aviation Specialists.</p>
 		</a>
 	</section> <!-- /homepage-callouts -->
 
@@ -387,23 +383,6 @@
 
 	<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
 	<script src="/scripts/scripts.js"></script>
-	<script type="text/javascript">
-		var player,
-		APIModules,
-		videoPlayer;
-
-		var onTemplateLoad = function (experienceID) {
-			console.log('test');
-			player = brightcove.api.getExperience(experienceID);
-			APIModules = brightcove.api.modules.APIModules;
-		};
-
-		var onTemplateReady = function (evt) {
-			videoPlayer = player.getModule(APIModules.VIDEO_PLAYER);
-			videoPlayer.play();
-		};
-	</script>
-
 	<script type="text/javascript">
 		(function (i, s, o, g, r, a, m) {
 			i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
