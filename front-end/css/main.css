@@ -504,7 +504,7 @@ img, object, embed {
 	position: absolute;
 	top: 0;
 	width: 100%;
-	z-index: 1;
+	z-index: 2;
 }
 
 .homepage-video .title-screen img {
@@ -552,9 +552,9 @@ img, object, embed {
 	color: #ed9d32;
 }
 
-/*.homepage-video .video-container {
-	display: none;
-}*/
+.homepage-video .video-container {
+	z-index: 1;
+}
 
 .homepage-video object,
 .homepage-video embed {

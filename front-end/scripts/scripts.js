@@ -28,7 +28,6 @@ $(function () {
 	   ========================================================================== */
 	$('.homepage-video .title-screen').click(function () {
 		$(this).fadeOut();
-		//$('.homepage-video .video-container').show();
 	});
 
 });
