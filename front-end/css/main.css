@@ -269,9 +269,9 @@ img, object, embed {
 /* ==========================================================================
    Custom Styles
    ========================================================================== */
-.aftv a {
+.aftv {
 	display: block;
-	padding: 4em;
+	padding: 4em 0;
 	text-align: center;
 	-moz-transition: background 150ms ease-out;
 	-o-transition: background 150ms ease-out;
@@ -279,25 +279,13 @@ img, object, embed {
 	transition: background 150ms ease-out;
 }
 
-.aftv a:hover {
-	background: #ed9d32;
-	color: #fff;
-}
-
 .aftv h2 {
 	font-size: 1.4375em;
 	font-weight: 900;
 	letter-spacing: 0.05em;
 	margin: 0 0 0.25em 0;
-	-moz-transition: color 150ms ease-out;
-	-o-transition: color 150ms ease-out;
-	-webkit-transition: color 150ms ease-out;
-	transition: color 150ms ease-out;
 }
 
-.aftv a:hover h2 {
-	color: #fff;
-}
 
 .aftv h3 {
 	color: #5f6c75;
@@ -306,52 +294,41 @@ img, object, embed {
 	line-height: 1;
 	margin: 0 0 0.25em 0;
 	text-transform: uppercase;
-	-moz-transition: color 150ms ease-out;
-	-o-transition: color 150ms ease-out;
-	-webkit-transition: color 150ms ease-out;
-	transition: color 150ms ease-out;
-}
-
-.aftv a:hover h3 {
-	color: #fff;
 }
 
 .aftv p {
 	color: #5f6c75;
 	font-size: 1.25em;
 	margin: 0;
-	-moz-transition: color 150ms ease-out;
-	-o-transition: color 150ms ease-out;
-	-webkit-transition: color 150ms ease-out;
-	transition: color 150ms ease-out;
-}
-
-.aftv a:hover p {
-	color: #fff;
 }
 
 .aftv .schedule {
 	list-style: none;
-	margin: 0.75em 0 0 0;
+	margin: 1em 0 0 0;
 	padding: 0;
 }
 
 .aftv .schedule li {
 	display: inline-block;
-	margin: 2em 2em 0 2em;
+}
+
+.aftv .schedule a {
+	color: #5f6c75;
+	display: block;
+	padding: 1em 2em;
+	-moz-transition: all 150ms ease-out;
+	-o-transition: all 150ms ease-out;
+	-webkit-transition: all 150ms ease-out;
+	transition: all 150ms ease-out;
+}
+
+.aftv .schedule a:hover {
+	background: #ed9d32;
+	color: #fff;
 }
 
 .aftv .schedule .time {
-	color: #5f6c75;
 	font-size: 1.125em;
-	-moz-transition: color 150ms ease-out;
-	-o-transition: color 150ms ease-out;
-	-webkit-transition: color 150ms ease-out;
-	transition: color 150ms ease-out;
-}
-
-.aftv a:hover .schedule .time {
-	color: #fff;
 }
 
 .aftv .schedule h4 {
@@ -364,7 +341,7 @@ img, object, embed {
 	transition: color 150ms ease-out;
 }
 
-.aftv a:hover .schedule h4 {
+.aftv .schedule a:hover h4 {
 	color: #fff;
 }
 
@@ -1013,7 +990,6 @@ a.site-credit svg {
 
 	.aftv .schedule {
 		display: inline-block;
-		margin-top: 1em;
 		max-width: 50em;
 		vertical-align: middle;
 	}
@@ -1021,7 +997,6 @@ a.site-credit svg {
 	.aftv .schedule li {
 		display: block;
 		float: left;
-		margin: 1.5em 0 0 0;
 		width: 50%;
 	}
 
@@ -1180,8 +1155,8 @@ a.site-credit svg {
 }
 
 @media only screen and (max-width: 950px) {
-	.aftv a {
-		padding: 3em 2em;
+	.aftv {
+		padding: 3em 0;
 	}
 
 	.aftv .schedule h4 {
@@ -1624,6 +1599,31 @@ a.site-credit svg {
 
 	.aftv h3 {
 		font-size: 1.5em;
+	}
+
+	.aftv .schedule {
+		margin-top: 0;
+	}
+
+	.aftv .schedule li {
+		margin-top: 2em;
+	}
+
+	.aftv .schedule a {
+		padding: 0;
+		-moz-transition: none;
+		-o-transition: none;
+		-webkit-transition: none;
+		transition: none;
+	}
+
+	.aftv .schedule a:hover {
+		background: none;
+		color: #5f6c75;
+	}
+
+	.aftv .schedule a:hover h4 {
+		color: #ed9d32;
 	}
 
 	.homepage-video .overlay {
