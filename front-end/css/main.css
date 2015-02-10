@@ -865,19 +865,21 @@ a.site-credit svg {
 }
 
 .training a {
-	border: 1px solid #e9ebed;
-	border-width: 0 1px 1px 0;
 	display: block;
 	float: left;
 	min-height: 25em;
 	padding: 5% 8em 0 8em;
 	position: relative;
 	text-align: center;
+	-moz-transition: background 150ms ease-out;
+	-o-transition: background 150ms ease-out;
+	-webkit-transition: background 150ms ease-out;
+	transition: background 150ms ease-out;
 	width: 50%;
 }
 
-.training a:nth-child(2n) {
-	border-right: none;
+.training a:hover {
+	background: #ffac2a;
 }
 
 .training a:after {
@@ -887,19 +889,11 @@ a.site-credit svg {
 	content: '\0020';
 	height: 100%;
 	left: 0;
-	opacity: 0;
+	opacity: .1;
 	position: absolute;
 	top: 0;
-	-moz-transition: opacity 150ms ease-out;
-	-o-transition: opacity 150ms ease-out;
-	-webkit-transition: opacity 150ms ease-out;
-	transition: opacity 150ms ease-out;
 	width: 100%;
 	z-index: 1;
-}
-
-.training a:hover:after {
-	opacity: .1;
 }
 
 .training .overlay {
@@ -940,6 +934,10 @@ a.site-credit svg {
 	transition: color 150ms ease-out;
 }
 
+.training a:hover h2 {
+	color: #fff;
+}
+
 .training p {
 	color: #5f6c75;
 	font-size: 1.25em;
@@ -947,6 +945,10 @@ a.site-credit svg {
 	-o-transition: color 150ms ease-out;
 	-webkit-transition: color 150ms ease-out;
 	transition: color 150ms ease-out;
+}
+
+.training a:hover p {
+	color: #fff;
 }
 
 .training .btn {
@@ -968,6 +970,7 @@ a.site-credit svg {
 	background: #0053a0;
 	color: #fff;
 }
+
 
 
 /* ==========================================================================
