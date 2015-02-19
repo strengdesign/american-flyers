@@ -665,12 +665,11 @@ a.site-credit svg {
 
 .site-header .phone {
 	font-family: 'Futura W03', sans-serif;
-	font-size: 1.125em;
 	font-weight: 600;
 	padding: 0.5em 0;
 	position: absolute;
-	right: 7.5em;
-	top: 2.125em;
+	right: 7em;
+	top: 2.75em;
 }
 
 .site-logo {
@@ -685,12 +684,11 @@ a.site-credit svg {
 
 .site-nav {
 	font-family: 'Futura W03', sans-serif;
-	font-size: 1.125em;
 	font-weight: 600;
 	position: absolute;
-	right: 16em;
+	right: 15em;
 	text-align: right;
-	top: 2.125em;
+	top: 2.75em;
 }
 
 .site-nav .nav-icon,
@@ -719,7 +717,7 @@ a.site-credit svg {
 	color: #0053a0;
 	display: block;
 	letter-spacing: 0.05em;
-	padding: 0.5em 1.25em;
+	padding: 0.5em 1em;
 	text-transform: uppercase;
 }
 
@@ -789,11 +787,10 @@ a.site-credit svg {
 
 .site-search {
 	display: block;
-	font-size: 1.125em;
 	padding: 0.75em 0.75em;
 	position: absolute;
 	right: 3.5em;
-	top: 2.125em;
+	top: 2.75em;
 }
 
 .site-search:hover {
@@ -963,7 +960,7 @@ a.site-credit svg {
    Media Queries
    ========================================================================== */
 
-@media only screen and (max-width: 1550px) {
+@media only screen and (max-width: 1600px) {
 	h1 {
 		font-size: 3.5em;
 	}
@@ -1046,7 +1043,7 @@ a.site-credit svg {
 	}
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1450px) {
 	.phone-contact .phone {
 		float: left;
 		max-width: none;
@@ -1083,7 +1080,7 @@ a.site-credit svg {
 	}
 }
 
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1200px) {
 	.aftv h2 {
 		font-size: 1.25em;
 		margin-bottom: 0.5em;
@@ -1154,7 +1151,7 @@ a.site-credit svg {
 	}
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 975px) {
 	.aftv {
 		padding: 3em 0;
 	}
